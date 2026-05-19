@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Poem Generator</title>
+    <meta charset="UTF-8" />
+
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>AI Latino Poem Generator</h1>
+      <main>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter Topic of the Latino Poem, You'd like"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="example">i.e: Flowers, Paradise, Sunsets</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        This AI Project was coded by
+        <a href="https://github.com/rororaisa1-dot" target="_blank"
+          >Raisa Rosario</a
+        >
+        and is
+        <a
+          href="https://github.com/rororaisa1-dot/LatinoPoemGenerator"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and its hosted to
+        <a
+          href="https://app.netlify.com/teams/rororaisa1-dot/projects"
+          target="_blank"
+        >
+          Netlify.</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
